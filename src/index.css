@@ -1,13 +1,550 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+/* Header start  */
+.header-container {
+  background: #eeeff1;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1100px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+.navbar-item-logo {
+  color: #34547a;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.navbar-item-menu {
+  display: flex;
+  gap: 42px;
+  transition: all 1s;
+
+}
+.navbar-item-menu-list {
+  color: var(--Accent, #34547a);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 164.063%;
+  letter-spacing: 1.6px;
+  transition: all 1s;
+  text-decoration: none;
+}
+.navbar-item-menu-list:hover {
+  color: red;
+  transition: all 1s;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 170px;
+  padding-bottom: 140px;
+}
+.content-right h1 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 164.063%;
+}
+.content-right p {
+  width: 540px;
+  color: #727272;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 164.063%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.content-right button {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 164.063%;
+  letter-spacing: 1.6px;
+  background: #34547a;
+  padding: 25px 40px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 1s;
+  border: 0;
+  /* box-shadow: 0 0 18px 0 rgba(0, 0, 0, 20); */
+}
+.content-right button:hover {
+  background: #166bb1;
+  transition: all 1s;
+}
+
+/* Header finish  */
+/* Section start */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero h2 {
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+.hero p {
+  width: 540px;
+  color: #727272;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 164.063%;
+  margin-bottom: 100px;
+}
+.section-content {
+  background: var(--Accent, #34547a);
+}
+.section-content-title {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.section-content-title-item {
+  display: flex;
+  align-items: center;
+}
+.section-content-title-item-icon {
+  margin-right: 20px;
+}
+.section-content-title-item-info h3 {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.section-content-title-item-info p {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 164.063%;
+}
+.section-skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+.skills-item h2 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 50px;
+}
+.skills-item p {
+  color: #727272;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 164.063%;
+  margin-bottom: 20px;
+}
+.skills-item hr {
+  background: var(--Accent, #34547a);
+  width: 349.357px;
+  height: 4px;
+  transform: rotate(-0.06deg);
+  flex-shrink: 0;
+  margin-bottom: 30px;
+}
+/* Section finish */
+/* Section-2 start */
+.about_me {
+  background: var(--Silver, #eeeff1);
+  padding-bottom: 100px;
+}
+.about_me-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about_me-title h2 {
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.about_me-title p {
+  width: 540px;
+  color: #727272;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 164.063%;
+  padding-bottom: 60px;
+}
+.about_me-title img {
+  width: 1100px;
+}
+#side {
+  width: 450px;
+}
+.section-2-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.section-2-clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  gap: 30px;
+}
+/* Section-2 finish */
+/* Section-3 start */
+form {
+  background: var(--Silver, #eeeff1);
+}
+.form-title h2 {
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-top: 100px;
+  margin-bottom: 50px;
+}
+.form-title p {
+  width: 540px;
+  color: #727272;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 164.063%;
+  margin: 0 auto;
+}
+.form-input {
+  display: flex;
+  justify-content: center;
+  margin-top: 65px;
+}
+#input-1 {
+  background: #fff;
+  width: 245px;
+  height: 50px;
+  border: 0;
+  margin-right: 30px;
+  color: #5f5d5d;
+  padding-left: 20px;
+}
+#input-2 {
+  background: #fff;
+  width: 245px;
+  height: 50px;
+  border: 0;
+  color: #5f5d5d;
+  padding-left: 20px;
+}
+#input-3 {
+  background: #fff;
+  width: 540px;
+  height: 175px;
+  border: 0;
+  margin-top: 20px;
+  color: #5f5d5d;
+  padding-left: 20px;
+}
+.form-input-2 {
+  display: flex;
+  justify-content: center;
+}
+.form-titlee {
+  display: flex;
+  justify-content: center;
+}
+.form-titlee button {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 164.063%;
+  letter-spacing: 2.1px;
+  background: var(--Accent, #34547a);
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  border: 0;
+}
+
+/* Section-3 finish */
+/* Footer start */
+.footer {
+  background: var(--Accent, #34547a);
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.footer-title h3 {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 20px;
+}
+.footer-title p {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 164.063%;
+}
+/* Footer finish */
+.burger-menu{
+  margin-top: 80px;
+}
+.nav{
+  display: flex;
+  align-items: center;
+}
+.burger-menu div {
+  width: 50px;
+  background: var(--Accent, #34547a);
+  height: 5px;
+  margin-right: 30px;
+  display: none;
+}
+.burger-menu div:first-child {
+  width: 50px;
+  background: var(--Accent, #34547a);
+  height: 5px;
+  margin-bottom: 10px;
+}
+.burger-menu div:last-child {
+  width: 50px;
+  background: var(--Accent, #34547a);
+  height: 5px;
+  margin-top: 10px;
+}
+/* Адаптация */
+@media all and (max-width: 1400px) {
+  .navbar {
+    width: 100%;
+  }
+  .navbar-item-logo {
+    margin-left: 50px;
+  }
+  .navbar-item-menu {
+    margin-right: 50px;
+  }
+  .sidebar_imgg {
+    display: none;
+  }
+  .sidebar_img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .section-2-clients {
+    flex-wrap: wrap;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .section-content-title {
+    flex-wrap: wrap;
+  }
+  .section-skills {
+    flex-direction: column-reverse;
+  }
+  .about_me-title img {
+    width: 80%;
+  }
+  .content-right {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .footer-container {
+    width: 100%;
+  }
+  .footer-title {
+    margin-left: 50px;
+  }
+  .footer-title2 {
+    margin-right: 50px;
+  }
+}
+@media all and (max-width: 710px) {
+  .navbar-item-menu {
+    display: none;
+  }
+  .content-right p {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .hero p {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .about_me-title p {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .form-title p {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #input-3 {
+    width: 80%;
+  }
+  .form-input {
+    flex-direction: column;
+    align-items: center;
+  }
+  #input-1 {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  .footer-container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+  .footer-title {
+    margin-left: 0;
+  }
+  .footer-title2 {
+    margin-right: 0;
+  }
+  .section-skills-title {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  #side {
+    width: 80%;
+  }
+  .skills-item hr {
+    width: 90%;
+  }
+  .content-left {
+    display: flex;
+    justify-content: center;
+  }
+  .content-left img {
+    width: 80%;
+  }
+  .navbar-item-logo {
+    margin-left: 20px;
+    font-size: 40px;
+  }
+  .content-right h1 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 164.063%;
+  }
+  .burger-menu div{
+    display: block;
+  }
+  .navbar-item-menu.active{
+    display: block;
+    position: absolute;
+    background: var(--Accent, #09acaf);
+    background-size: cover;
+    top: 0;
+    left: 0;
+    padding-top: 50%;
+    padding-left: 30%;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    transition: all 1s;
+  }
+  .burger-menu{
+    z-index: 1; 
+    position: relative;
+  }F
+  .burgerr1.active{
+    transform: rotate(45deg);
+    position: absolute;
+    top: 9px;
+    transition: all 1s;
+  }
+  .burgerr2.active{
+    display: none;
+  }
+  .burgerr3.active{
+    transform: rotate(-45deg);
+    transition: all 1s;
+  }
+  .section-skills {
+    margin-top: 0px;
+}
 }
